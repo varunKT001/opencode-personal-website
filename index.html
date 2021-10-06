@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varun Tiwari</title>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <nav class="d-flex justify-content-center">
+    <ul class="nav nav-pills mb-3 mt-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+          Home
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button"
+          role="tab" aria-controls="pills-about" aria-selected="false">
+          About
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
+          type="button" role="tab" aria-controls="pills-project" aria-selected="false">
+          Projects
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+          type="button" role="tab" aria-controls="pills-education" aria-selected="false">
+          Education
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery"
+          type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">
+          Gallery
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Home page content -->
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Hey &#128075;, I'm Varun Tiwari</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Student | Frontend Developer | Backend developer
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3"
+              onclick="$('#pills-project-tab').tab('show')">
+              Projects
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+              onclick="$('#pills-about-tab').tab('show')">
+              About Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about page content -->
+    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+      <div class="
+            hero
+            row
+            flex-lg-row-reverse
+            align-items-center
+            g-5
+            py-5
+            w-75
+            mx-auto
+          ">
+        <div class="col-10 col-sm-8 col-lg-6 my-image">
+          <img src="./images/my-image.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">
+            About Me &#128512;
+          </h1>
+          <p class="lead">
+            My name is Varun Tiwari, I'm a student at ABV-IIITM, Gwalior. Currently, I am pursuing an Integrated B.Tech
+            and M.Tech in Information Technology. Additionally, I am an experienced Full-Stack Web Developer. I
+            currently exploring new technologies in the field of web.
+          </p>
+          <p class="lead">
+            Here is the tech stack I'm familiar with &#128736;&#65039;:
+          </p>
+          <div class="techstack-container mb-4">
+            <span class="badge bg-primary">HTML5</span>
+            <span class="badge bg-primary">CSS3</span>
+            <span class="badge bg-primary">node.js</span>
+            <span class="badge bg-primary">express.js</span>
+            <span class="badge bg-primary">react.js</span>
+            <span class="badge bg-primary">PostgreSQL</span>
+            <span class="badge bg-primary">git</span>
+            <span class="badge bg-primary">github</span>
+            <span class="badge bg-primary">socketio</span>
+            <span class="badge bg-primary">Heroku</span>
+            <span class="badge bg-primary">Netlify</span>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="mailto:tiwarivarun819.vt33.vt@gmail.com" target="_blank"
+              class="btn btn-primary btn-lg px-4 me-md-2">
+              Say Hello &#129309;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects page content -->
+    <div class="tab-pane fade mt-3" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <!-- Tomperchat -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                  alt="Thumbnail [100%x225]" src="./images/tomper-chat.png" data-holder-rendered="true"
+                  style="height: 225px; width: 100%; display: block" />
+                <div class="card-header">
+                  <h4>Tomper Chat</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Tomper Chat is a web-based chatting application, allowing users to either chat in public rooms or
+                    make their own rooms, by providing a unique room ID. Users can also share images with other room
+                    members. Nodejs as the backend, with a React frontend, are used to emit chat messages via socketio.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://tomperchat.netlify.app/" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Live
+                      </a>
+                      <a href="https://github.com/varunKT001/tomperchat-frontend" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tomperblog -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                  alt="Thumbnail [100%x225]" src="./images/tomper-blog.png" data-holder-rendered="true"
+                  style="height: 225px; width: 100%; display: block" />
+                <div class="card-header">
+                  <h4>Tomper Blog</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Blogg is a markdown based blogging system that lets users insert photos, videos, spreadsheets,
+                    presentations, and other content into their blogs to make it more interactive. Backend is composed
+                    of Nodejs and PostgreSQL. Additionally, the authentication and email verification of users is
+                    handled using JsonWebToken (JWT).
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://tomperblogg.netlify.app/" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Live
+                      </a>
+                      <a href="https://github.com/varunKT001/blogg-frontend" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sudarshan -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                  alt="Thumbnail [100%x225]" src="./images/sudarshan.png" data-holder-rendered="true"
+                  style="height: 225px; width: 100%; display: block" />
+                <div class="card-header">
+                  <h4>Sudarshan</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Sudarshan an online tool allows users to alter the size of images as per their needs. The app also
+                    features an image compressor that reduces the image's size according to user preferences.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://sudarshan.netlify.app/" target="_blank" class="btn btn-sm btn-outline-secondary">
+                        Live
+                      </a>
+                      <a href="https://github.com/varunKT001/sudarshan" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- monkstore -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                  alt="Thumbnail [100%x225]" src="./images/monkstore.png" data-holder-rendered="true"
+                  style="height: 225px; width: 100%; display: block" />
+                <div class="card-header">
+                  <h4>Monk Store</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Monk Store is a fully featured online store that facilitates the easy purchase of gadgets like
+                    smartphones, laptops, and storage devices. Users can purchase electronic goods and even sell them.
+                    The backend is powered by Nodejs and PostgreSQL. JsonWebToken(JWT) is used for user authentication
+                    and email verification.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://webkriti-the-monk-store.herokuapp.com/" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Live
+                      </a>
+                      <a href="https://github.com/varunKT001/the-monk-store" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio -->
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                  data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                  alt="Thumbnail [100%x225]" src="./images/portfolio.png" data-holder-rendered="true"
+                  style="height: 225px; width: 100%; display: block" />
+                <div class="card-header">
+                  <h4>Portfolio Website</h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is my personal portfolio website. Its made with react. Styled with plain vanilla CSS, its
+                    responsive for both tablets and mobile phones (even very small sized &#128526;)
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://varun-tiwari.netlify.app/" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Live
+                      </a>
+                      <a href="https://github.com/varunKT001/personal-portfolio" target="_blank"
+                        class="btn btn-sm btn-outline-secondary">
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education page content -->
+    <div class="education tab-pane fade w-75 mx-auto my-5" id="pills-education" role="tabpanel"
+      aria-labelledby="pills-education-tab">
+      <div class="card my-3">
+        <div class="card-body">
+          <h5 class="card-title">Little Kingdom School, Jabalpur</h5>
+          <p class="card-text">High School Diploma, Maths and Science</p>
+        </div>
+      </div>
+      <div class="card my-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            Atal Bihari Vajpayee-Indian Institute of Information Technology
+            and Management (ABV-IIITM), Gwalior
+          </h5>
+          <p class="card-text">
+            Integrated Mtech + Btech, Information Technology
+            <br />
+          <p class="text-muted">2020 – 2025</p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery page content -->
+    <div class="gallery tab-pane fade w-75 mx-auto" id="pills-gallery" role="tabpanel"
+      aria-labelledby="pills-gallery-tab">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1545562083-c583d014b4f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1133&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1557062975-96113e46608b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=363&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1597256789065-097537d5c550?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" />
+            <img
+              src="https://images.unsplash.com/photo-1602241628512-459cdd3234fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" />
+          </div>
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1611250282006-4484dd3fba6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1598089842345-111cc13e5ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1596003906949-67221c37965c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+          </div>
+          <div class="column">
+            <img
+              src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <img
+              src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <img
+              src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            <img
+              src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+            <img
+              src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-5">
+    <h5 align="center" class="mb-4">Connect with me &#128279;</h5>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://www.facebook.com/people/Varun-Tiwari/100057310502325/"
+        target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-button linkedin" href="https://linkedin.com/in/varun-tiwari-454591178" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a class="social-button instagram" href="https://www.instagram.com/varuntiwari55/" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a class="social-button github" href="https://github.com/varunKT001" target="_blank"><i
+          class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
